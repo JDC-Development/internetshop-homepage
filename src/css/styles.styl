@@ -1,1 +1,116 @@
 @import 'partial/styles'
+descriptColor = #c0c0c0;
+secondColor = #fdb447;
+ledColor = #2e2e2e;
+
+/*-----GLOBAL-----*/
+body
+    background #eaeaea;
+    margin 0;
+    padding 0;
+
+/*-----HEAD-----*/
+headder
+    display flex;
+    flex-direction row;
+    align-items center;
+    justify-content space-around;
+    background ledColor;
+    .name
+        font-family MyriadProSemibold;
+        font-size 30px;
+        color descriptColor;
+    .text-logo
+        display flex;
+        flex-direction column;
+        align-items flex-start;
+    .descript-name
+        font-family MyriadProRegular;
+        font-size 12px;
+        color descriptColor;
+    .name-yellow
+        color secondColor;
+    .logo
+        display flex;
+        align-items center;
+        margin 30px 0px;
+    .number-head
+        font-family MyriadProRegular;
+        font-size 12px;
+        color descriptColor;
+        
+/*------TOP MENU-----*/
+#top-menu
+    background secondColor;
+    padding 25px 0px;
+    ul
+        display inline-block;
+        li
+            display inline-block;
+            a
+                color ledColor;
+                text-decoration none;
+                font-family MyriadProRegular;
+                font-size 12px;
+                margin 0 25px;
+                padding 10px;
+                text-transform uppercase;
+            a:hover
+                background ledColor;
+                color secondColor;
+                border-radius 5px;
+                text-shadow 0 0 10px #372912;
+                
+/*------LOGIN AND BASKET------*/
+#login-basket
+    display flex;
+    align-items center;
+    justify-content space-around;
+    margin-top 20px;
+    .login-form
+        display flex;
+        align-items flex-start;
+        justify-content center;
+        flex-direction column;
+    .icon-and-form
+        display flex;
+        align-items center;
+    .descript-login
+        font-family MyriadProRegular;
+        color ledColor;
+        font-size 12px;
+    #login
+        input
+            box-shadow 1px solid ledColor;
+            width 190px;
+            height 15px;
+            font-family MyriadProRegular;
+            font-size 12px;
+            margin 0 5px;
+        button
+            background linear-gradient(to bottom, #373737, #141414);
+            border 1px solid black;
+            font-family MyriadProRegular;
+            font-size 12px;
+            color secondColor;
+            padding 5px 10px;
+        button:hover
+            cursor pointer;
+.basket
+    display flex;
+    align-items center;
+    .descript-basket
+        display flex;
+        flex-direction column;
+        margin-left 10px;
+        .head-basket
+            font-family MyriadProSemibold;
+            font-size 12px;
+            color secondColor;
+        a
+            font-family MyriadProRegular;
+            font-size 12px;
+            color descriptColor;
+            text-decoration none;
+            margin-right  10px;
+            
