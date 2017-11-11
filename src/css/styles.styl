@@ -3,21 +3,49 @@ descriptColor = #c0c0c0;
 secondColor = #fdb447;
 ledColor = #2e2e2e;
 
+/*-----IMPORT FONTS-----*/
+@font-face
+    font-family "FontAwesome";
+    src url(fonts/FontAwesome.otf);
+    font-family "MyriadProSemibold";
+    src url(fonts/MyriadPro-Semibold.otf);
+    font-family "MyriadProRegular";
+    src url(fonts/MyriadPro-Regular.otf);
+    font-family "MyriadProBold";
+    src url(fonts/MyriadPro-Bold.otf);
+    
 /*-----GLOBAL-----*/
 body
     background #eaeaea;
     margin 0;
     padding 0;
+i
+    position relative;
+ul
+    margin 0;
+    padding 0;
+#main-pages
+    background white;
+    width 960px;
+    margin 0 auto;
+    box-shadow -3px 5px 6px 0px rgba(0,0,0,0.15);
 
+.content
+    width 960px;
+    margin 0 auto;
+
+#login-basket
+    width 960px;
+    margin 0 auto;
 /*-----HEAD-----*/
 headder
-    display flex;
+    width 100%;
     flex-direction row;
     align-items center;
     justify-content space-around;
     background ledColor;
     .name
-        font-family MyriadProSemibold;
+        font-family "MyriadProSemibold";
         font-size 30px;
         color descriptColor;
     .text-logo
@@ -25,7 +53,7 @@ headder
         flex-direction column;
         align-items flex-start;
     .descript-name
-        font-family MyriadProRegular;
+        font-family "MyriadProRegular";
         font-size 12px;
         color descriptColor;
     .name-yellow
@@ -35,11 +63,13 @@ headder
         align-items center;
         margin 30px 0px;
     .number-head
-        font-family MyriadProRegular;
+        font-family "MyriadProRegular";
         font-size 12px;
         color descriptColor;
         
 /*------TOP MENU-----*/
+.menu-top
+    background secondColor;
 #top-menu
     background secondColor;
     padding 25px 0px;
@@ -50,9 +80,9 @@ headder
             a
                 color ledColor;
                 text-decoration none;
-                font-family MyriadProRegular;
+                font-family "MyriadProRegular";
                 font-size 12px;
-                margin 0 25px;
+                margin 0 15px;
                 padding 10px;
                 text-transform uppercase;
             a:hover
@@ -76,7 +106,7 @@ headder
         display flex;
         align-items center;
     .descript-login
-        font-family MyriadProRegular;
+        font-family "MyriadProRegular";
         color ledColor;
         font-size 12px;
     #login
@@ -84,13 +114,13 @@ headder
             box-shadow 1px solid ledColor;
             width 190px;
             height 15px;
-            font-family MyriadProRegular;
+            font-family "MyriadProRegular";
             font-size 12px;
             margin 0 5px;
         button
             background linear-gradient(to bottom, #373737, #141414);
             border 1px solid black;
-            font-family MyriadProRegular;
+            font-family "MyriadProRegular";
             font-size 12px;
             color secondColor;
             padding 5px 10px;
@@ -104,13 +134,74 @@ headder
         flex-direction column;
         margin-left 10px;
         .head-basket
-            font-family MyriadProSemibold;
+            font-family "MyriadProSemibold";
             font-size 12px;
             color secondColor;
         a
-            font-family MyriadProRegular;
+            font-family "MyriadProRegular";
             font-size 12px;
             color descriptColor;
             text-decoration none;
             margin-right  10px;
-            
+
+/*------ASIDE------*/
+aside
+    margin 15px 10px;
+    padding-top 10px;
+#serch
+    display flex;
+    flex-direction column;
+    width 310px;
+    border 1px solid #cccccc;
+    border-radius 5px;
+    padding 8px;
+    form
+        display flex;
+        flex-direction column;
+    .head-search
+        background linear-gradient(to bottom, #43464a, black);
+        font-family "MyriadProSemibold";
+        font-size 12px;
+        color secondColor;
+        padding 10px;
+    select
+        margin 15px 0;
+        height 30px;
+    .descript-and-button
+        span
+            font-family "MyriadProRegular";
+            font-size 12px;
+            color #333333;
+        button
+            background linear-gradient(to bottom,#f8bb49,#f7941d);
+            font-family "MyriadProBold";
+            font-size 14px;
+            border 1px solid #f7941d;
+            padding 7px 17px;
+            color white;
+            margin-left 30px;
+.head-product
+    font-family "MyriadProSemobold";
+    font-size 14px;
+    color #333333;
+    background #efefef;
+    width 310px;
+    padding 8px;
+    border 1px solid #cccccc;
+    border-radius 5px;
+    margin 9px 0px;
+#product
+    ul
+         list-style-type none;
+         li
+             width 310px;
+             padding 8px;
+             border-bottom  1px solid #cccccc;
+             display none;
+             a
+                 font-family "MyriadProRegular";
+                 font-size 12px;
+                 text-decoration none;
+                 color #333333;
+.head-product:hover
+    cursor pointer;
