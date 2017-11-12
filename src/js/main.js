@@ -20,3 +20,12 @@ function autoSlider(){
         autoSlider();  
     },3000);
 }
+
+/*-----ADD TO BASKET FOR CLICK*/
+var count = 0;
+$(document).ready(function(){
+   $('.to-basket').on('click',function(){
+       count = count+1;
+    $('.head-basket').text('There are currently ' +count+ ' items in your basket!');  
+    });
+});
